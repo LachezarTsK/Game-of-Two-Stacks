@@ -46,7 +46,7 @@ public class Solution {
 
   /**
    * Calculates the maximum number of integers that can be removed from stackA and stackB,
-   * the sum of which do not exceed the maxSum.
+   * the sum of which do not exceed maxSum.
    *
    * @return An integer, representing the maximum number of removed integers, as described.
    */
@@ -79,8 +79,7 @@ public class Solution {
         total_removedIntegers++;
       }
 
-      // If maxSum is exceeded, replace in variable 'sum' the last integer from stackA
-      // with the current integer from stackB.
+      // If maxSum is exceeded, replace in variable 'sum' the last integer from stackA with the current from stackB.
       else if (!removed_from_stackA.isEmpty()) {
         sum += (long) current - (long) removed_from_stackA.pop();
       }
