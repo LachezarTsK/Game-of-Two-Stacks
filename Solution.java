@@ -79,7 +79,7 @@ public class Solution {
         total_removedIntegers++;
       }
 
-      // If maxSum is exceeded, replace in variable 'sum' the last integer from stackA with the current from stackB.
+      // If maxSum is exceeded, replace in variable 'sum' the last integer from stackA with current from stackB.
       else if (!removed_from_stackA.isEmpty()) {
         sum += (long) current - (long) removed_from_stackA.pop();
       }
